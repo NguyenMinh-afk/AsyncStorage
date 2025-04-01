@@ -1,12 +1,12 @@
 import 'react-native-gesture-handler';
 import React from 'react';
-import RootRouter from './src/routers/index';
-import { AuthProvider } from './src/contexts/AuthContext';
+import { AuthProvider } from './src/contexts/AuthContext'; // Import AuthProvider
+import AppRouter from './src/routers/index'; // Import Router chính của ứng dụng
 
 const App = () => {
   return (
     <AuthProvider>
-      <RootRouter />
+      <AppRouter />
     </AuthProvider>
   );
 };
